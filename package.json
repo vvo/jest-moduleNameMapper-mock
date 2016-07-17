@@ -1,0 +1,24 @@
+{
+  "name": "jest-moduleNameMapper-jest-mock",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "Algolia <support@algolia.com> (https://github.com/algolia/)",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-jest": "^13.2.2",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-stage-2": "^6.11.0",
+    "jest-cli": "^13.2.3"
+  },
+  "jest": {
+    "testRegex": "\\.test\\.js$",
+    "moduleNameMapper": {
+      "^.+\\.(svg)$": "<rootDir>/fileMock.js"
+    }
+  }
+}
